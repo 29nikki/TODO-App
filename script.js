@@ -80,6 +80,6 @@ function saveTodos(){
 
 function getTodos(){
     const todos = localStorage.getItem("todos");
-    return JSON.parse(todos); // convert JSON to array
+    return  todos ? JSON.parse(todos) : []; // convert JSON to array
 }
 
